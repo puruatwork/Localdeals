@@ -43,14 +43,33 @@ public class ProductService {
 	private List<ProductDetailsDto> convertToDto(List<Products> products) {
 		List<ProductDetailsDto> lists = new ArrayList<>();
 		ProductDetailsDto list = new ProductDetailsDto();
+		ProductDetailsDto list1 = new ProductDetailsDto();
+		ProductDetailsDto list2 = new ProductDetailsDto();
+		ProductDetailsDto list3 = new ProductDetailsDto();
+		ProductDetailsDto list4 = new ProductDetailsDto();
 		for (Products product : products) {
 			if ("FRUITS".equals(product.getGroceryTypeEnum())) {
 				list.setType("Fruits");
 				list.getList().add(modelMapper.map(product, ProductDto.class));
+			} else if ("VEGETABLES".equals(product.getGroceryTypeEnum())) {
+				list1.setType("Vegetables");
+				list1.getList().add(modelMapper.map(product, ProductDto.class));
+			} else if ("MEAT".equals(product.getGroceryTypeEnum())) {
+				list2.setType("Meat");
+				list2.getList().add(modelMapper.map(product, ProductDto.class));
+			} else if ("MEDICINE".equals(product.getGroceryTypeEnum())) {
+				list3.setType("Medicine");
+				list3.getList().add(modelMapper.map(product, ProductDto.class));
+			} else if ("GROCERY".equals(product.getGroceryTypeEnum())) {
+				list4.setType("Grocery");
+				list4.getList().add(modelMapper.map(product, ProductDto.class));
 			}
-
 		}
 		lists.add(list);
+		lists.add(list1);
+		lists.add(list2);
+		lists.add(list3);
+		lists.add(list4);
 		return lists;
 	}
 

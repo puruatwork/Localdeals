@@ -14,6 +14,17 @@ insert into products (id, code, name, grocery_type, image_url) values (12,'BEETR
 insert into products (id, code, name, grocery_type, image_url) values (13,'GINGER', 'Ginger', 'VEGETABLES','https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/9c26881e-0375-492b-ad72-462f4c900bb9_425x425.JPG');
 
 
+
+insert into products (id, code, name, grocery_type, image_url) values (14,'MUTTON', 'Mutton', 'MEAT','https://4.imimg.com/data4/BW/RO/ANDROID-66536491/product-500x500.jpeg');
+insert into products (id, code, name, grocery_type, image_url) values (15,'CHICKEN', 'Chicken', 'MEAT','https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS-ok46kWaax8rb8tnJJ2tPvmrOysj0btgxrc6tLIawCVgI2XuH&usqp=CAU');
+insert into products (id, code, name, grocery_type, image_url) values (16,'FISH', 'Salmon Fish', 'MEAT','https://image.shutterstock.com/image-photo/fresh-salmon-fish-uncooked-isolated-260nw-720142714.jpg');
+insert into products (id, code, name, grocery_type, image_url) values (17,'EGG', 'Eggs', 'MEAT','https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ2DZTCb2xGIKVXFGg562Nx13XNS1V4tsdtDWAn1GUli60bsARu&usqp=CAU');
+
+insert into products (id, code, name, grocery_type, image_url) values (18,'SALT', 'Annapurna Salt', 'GROCERY','https://5.imimg.com/data5/HS/IJ/MY-19432744/annapurna-salt-1kg-500x500.png');
+insert into products (id, code, name, grocery_type, image_url) values (19,'SALT', 'Aashirvaad Salt', 'GROCERY','https://www.aashirvaad.com/images/products-saltbanner.jpg');
+
+insert into products (id, code, name, grocery_type, image_url) values (20,'AID', 'First AId Kit', 'MEDICINE','https://image.shutterstock.com/image-photo/red-plastic-first-aid-kit-260nw-207913528.jpg');
+
 insert into stores (id, store_name) values (1, 'Sri Venkateshawara Stores');
 insert into stores (id, store_name) values (2, 'Krishna General Stores');
 insert into stores (id, store_name) values (3, 'Balaji General Stores');
