@@ -37,16 +37,16 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
 		// disable CSRF required if request is from browser
-		http.csrf().disable();
+		http.csrf().disable()
 				// dont authenticate this particular request
-				//.authorizeRequests().antMatchers("*").permitAll()
+				.authorizeRequests().antMatchers("*").permitAll()
 				// other request need to be authenticated
-				//.anyRequest().authenticated().and()
+				.anyRequest().authenticated().and()
 				// exception handling
-				//.exceptionHandling().authenticationEntryPoint(jwtAuthenticationEntryPoint).and()
+				.exceptionHandling().authenticationEntryPoint(jwtAuthenticationEntryPoint).and()
 				// session management
-				//.sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS);
-		//http.addFilterBefore(jwtTokenVerifier, UsernamePasswordAuthenticationFilter.class);
+				.sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS);
+		http.addFilterBefore(jwtTokenVerifier, UsernamePasswordAuthenticationFilter.class);
 		http.headers().frameOptions().disable();
 	}
 
